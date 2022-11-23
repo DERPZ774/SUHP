@@ -24,4 +24,5 @@ function hasProperty(entity, property) {
 beam dmg + balancing
 if extra keybinds add geokinesis
 add transformation when gauntlet done
+test
 */
