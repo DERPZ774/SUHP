@@ -1,0 +1,62 @@
+{
+    "name": "Garnet Gem Physiology",
+    "modifiers": {
+        "fiskheroes:regeneration": {
+            "factor": 1.5
+        },
+        "fiskheroes:potion_immunity": {
+            "potionEffects": [
+                "minecraft:poison",
+                "minecraft:wither"
+            ]
+        },
+        "fiskheroes:damage_immunity|cold": {
+            "damageType": "COLD"
+        },
+        "fiskheroes:damage_immunity|elec": {
+            "damageType": "ELECTRICITY"
+        },
+        "fiskheroes:fire_immunity": {},
+        "fiskheroes:projectile_immunity": {},
+        "fiskheroes:arrow_catching": {},
+        "fiskheroes:charged_beam": {
+            "damageProfile": {
+                "damage": 7.0,
+                "types": {
+                    "ELECTRICITY": 1.0,
+                    "FIRE": 0.5
+                },
+                "properties": {
+                    "COOK_ENTITY": true,
+                    "HEAT_TRANSFER": 20
+                }
+            },
+            "chargeTime": 20,
+            "duration": 40,
+            "cooldownTime": 40,
+            "range": 32.0,
+            "radius": 0.1
+        },
+        "fiskheroes:leaping": {
+            "leapAmount": [1.5, 0.2]
+        },
+        "fiskheroes:water_breathing": {},
+        "fiskheroes:transformation|weapon": {
+            "key": "GAUNTLET",
+            "transformation": {
+                "toggleData": "suhp:dyn/gauntlet",
+                "timerData": "suhp:dyn/gauntlet_timer",
+                "time": 10
+            },
+            "soundEvents": {
+                "ENABLE": "fiskheroes:utility_belt_switch",
+                "DISABLE": "fiskheroes:utility_belt_switch"
+            }
+        }
+    },
+    "hud": [{
+        "type": "CIRCLE",
+        "color": "fiskheroes:charged_beam",
+        "data": "fiskheroes:beam_charge"
+    }]
+}
